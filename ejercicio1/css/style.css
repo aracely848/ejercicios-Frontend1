@@ -1,0 +1,24 @@
+body {
+    background-color: aliceblue;
+    font-family: "Times New Roman";
+}
+
+h1 {
+    color: #005677;
+    background-color: #C4C4C4;
+}
+h2 {
+    color: #005677;
+    background-color: #C4C4C4;
+}
+
+img {
+    width: 250px;
+    height: auto;
+    display:block;
+    margin:auto;
+}
+
+ul li {
+    list-style:none;
+}
