@@ -1,15 +1,29 @@
+@font-face{
+    src: url('../Fonts/Roboto/Roboto-Light.ttf');
+    font-family: 'Roboto';
+}
 body {
     background-color: aliceblue;
-    font-family: "Times New Roman";
+    font-family: 'Roboto', "Times New Roman";
+    padding: 20px;
 }
-
+header {
+    background-color: rgb(250, 250, 232);
+     background-image: url('../img/fondo.jpg');
+     background-repeat: no-repeat;
+     background-position: center -50px;
+     background-size: cover;
+     background-attachment: fixed; 
+     height:300px;
+}
 h1 {
     color: #005677;
-    background-color: #C4C4C4;
+    background-color: #b97575d8;
+    text-align: center;
 }
 h2 {
     color: #005677;
-    background-color: #C4C4C4;
+    background-color: #b97575d8;
 }
 
 img {
