@@ -1,0 +1,219 @@
+@font-face{
+    src: url('../Fonts/Roboto/Roboto-Light.ttf');
+    font-family: 'Roboto';
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #222222;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 100px;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+}
+header div, header nav {
+    display:flex;
+    align-items: center;
+}
+
+header div h1 {
+    font-family: 'Roboto', 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #39B24A;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header div h1 span.text_white{
+    font-family: 'Roboto', 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffffff;
+}
+header div h1 span.text_red{
+    font-family: 'Roboto', 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FC200C;
+}
+header div img {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+header nav {
+    margin-right: 7px;
+}
+header nav ul{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+header nav ul li a {
+    font-family: Roboto, 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-right: 13px;
+}
+section {
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    padding: 30px 10px;
+}
+section article {
+    width: 50%;
+}
+section article.img {
+    position: relative;
+}
+
+section article.img h1 {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    font-family: Roboto, 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 23px;
+    line-height: 28px;
+    text-decoration: none;
+    color: #FC200C;    
+}
+section article.img h1 span{
+    font-family: Roboto, 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 23px;
+    line-height: 28,13px;
+    text-decoration: none;
+    color: #FFFFFF;    
+}
+section article.text {
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+section article.text h2 {
+    font-family: Roboto, 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 23px;
+    line-height: 28,13px;
+    text-decoration: none;
+    color: #FC200C;
+    text-align: center;
+    margin-bottom: 60px;    
+}
+section article.text div {
+    display: flex;
+    justify-content: space-around;
+}
+section article.text p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: #222222;
+    margin-left: 18%;
+    margin-bottom: 10px;
+}
+section article.text div ol li {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+}
+
+
+footer {
+    background: #222222;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 100px;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+}
+footer div.text, footer div.logo {
+    display:flex;
+    align-items: center;
+}
+
+footer div.logo h2 {
+    font-family: 'Roboto', 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #39B24A;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+footer div.logo h2 span.text_white{
+    font-family: 'Roboto', 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffffff;
+}
+footer div.logo h2 span.text_red{
+    font-family: 'Roboto', 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FC200C;
+}
+footer div.logo img {
+    margin-right: 10px;
+}
+footer div.logo {
+    margin-right: 42px;
+}
+footer div.text ol{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+footer div.text ul {
+    padding-left: 20px;
+}
+footer div.text ul li a {
+    font-family: Roboto, 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-right: 13px;
+}
