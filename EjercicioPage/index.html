@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link href="css/style.css" rel="stylesheet" type="text/css" >
-    <title>Ejercicio</title>
+    <title>Petshop</title>
 </head> 
 <body>
     <header>
@@ -32,9 +32,11 @@
         </nav>
     </header>
     <section class="banner">
+       <div class="text">
         <h2>¡Es un placer tenerte aquí!</h2>
         <p>¡Comederos en descuento!</p>
         <button>COMEDEROS</button>
+       </div>
     </section>
     <section class="part1">
         <img src="img/pata_grande.png" alt="Imagen patita">
@@ -66,8 +68,8 @@
             <input placeholder="Ingresa tu correo electrónico">
             <input placeholder="Teléfono">
             <div>
-                <input placeholder="Resetear" type="button" class="resetear">
-                <input placeholder="Enviar" type="button" class="enviar">
+                <button class="resetear" type="reset">Resetear</button>
+                <button class="enviar" type="submit">Enviar</button>
             </div>
         </form>
     </section>
@@ -76,38 +78,40 @@
             <img src="img/Vector.png" alt="text">
             <label>Suscríbete para más novedades</label>
             <input placeholder="Ingresa tu correo electrónico"> 
-            <input placeholder="suscribirme" type="button" class="suscripcion">
+            <button class="suscripcion" type="submit">suscribirme</button>
         </form>
     </section>
     <section class="part5">
-        <div>
-            <div class="option1">
-                <img src="img/IconoLocation.png" alt="Location" width="66px" height="66px">
+        <div class="container">
+            <div class="content">
+                <div class="option1">
+                    <img src="img/IconoLocation.png" alt="Location" width="66px" height="66px">
+                </div>
+                <div class="option2">
+                    <h4>Localidad</h4>
+                    <p>Calle - provincia</p>
+                </div>
             </div>
-            <div class="option2">
-                <h4>Localidad</h4>
-                <p>Calle - provincia</p>
+            <div class="content">
+                <div class="option1">
+                    <img src="img/IconoPhone.png" alt="Phone" width="66px" height="66px">
+                </div>
+                <div class="option2">
+                    <h4>Teléfono</h4>
+                    <p>Número de teléfono</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="option1">
+                    <img src="img/IconoCorreo.png" alt="Correo" width="66px" height="66px">
+                </div>
+                <div class="option2">
+                    <h4>Correo electrónico</h4>
+                    <p>Direccción de correo</p>
+                </div>
             </div>
         </div>
-        <div>
-            <div class="option1">
-                <img src="img/IconoPhone.png" alt="Phone" width="66px" height="66px">
-            </div>
-            <div class="option2">
-                <h4>Teléfono</h4>
-                <p>Número de teléfono</p>
-            </div>
-        </div>
-        <div>
-            <div class="option1">
-                <img src="img/IconoCorreo.png" alt="Correo" width="66px" height="66px">
-            </div>
-            <div class="option2">
-                <h4>Correo electrónico</h4>
-                <p>Direccción de correo</p>
-            </div>
-        </div>
-        <img src="img/Logo2.png" class="logo2" height="23px" width="166">
+        <div class="logo"><img src="img/Logo2.png" class="logo2" height="23px" width="166"></div>
     </section>
     <section class="redes">
         <p>Nuestras redes sociales</p>

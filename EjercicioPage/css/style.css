@@ -8,6 +8,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 nav.nav1 {
     background-color: #222222;
     color: #ffffff;
@@ -18,28 +19,17 @@ nav.nav1 {
     display: flex;
 }
 nav ul{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
+    margin-right: 20px;
 }
 nav.nav1 ul.menu1{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
+    margin-right: 30px;
+    
 }
     
 nav ul li {
@@ -68,9 +58,22 @@ nav.nav1 ul.menu1 li a{
 nav.nav1 ul.menu1 li a i{
     margin-left: 5px;
 }
+header nav.nav1{
+    background: #222222;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 20px;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+}
+header nav.nav1 ul{
+    display:flex;
+    align-items: center;
+}
 header nav.logo {
     background-color: #F0A83E;
     display: flex;
+    justify-content: space-between;
 }
 header nav.logo img.logo1 {
     padding: 20px;
@@ -85,14 +88,12 @@ header nav.logo ul li {
 header nav.logo ul li img.patita {
     margin-right: 5px;
 }
-section.banner {
+/* section.banner {
     width: 100%;
     background-color: rgb(250, 250, 232);
     background-image: url('../img/foto.png');
     background-repeat: no-repeat;
-    background-position: center -50px;
-    background-size: cover;
-    background-attachment: fixed; 
+    background-size: cover; 
     height: 409px;
     position: relative;
 }
@@ -126,16 +127,66 @@ section.banner button {
     padding: 15px 10px;
     border-radius: 5px;
     text-align: center;
+} */
+
+
+section.banner {
+    width: 100%;
+    background-color: rgb(250, 250, 232);
+    background-image: url('../img/foto.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 410px;
+    display: flex;
+    justify-content: flex-end;
+}
+section.banner div.text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+section.banner div.text h2 {
+    font-size: 30px;
+    line-height: 35px;
+    background-color: #ffffff;
+    color: #3C2313;
+    padding: 10px;
+    margin: 5px;
+}
+section.banner div.text p {
+    font-size: 16px;
+    line-height: 19px;
+    color: #3C2313;
+    margin: 5px;
+}
+section.banner div.text button {
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    background-color: #F0A83E;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+section.part1 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 section.part1 img {
-    display:block;
     margin:auto;
     margin-top: 2%;
 }
 
 section.part1 h1 {
     color: #3C2313;
-    text-align: center;
+    font-family: 'Roboto', 'Courier New', Courier, monospace;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 47px;
+    margin: 15px 0;
 }
 section.part1 h1 {
     color: #3C2313;
@@ -161,6 +212,10 @@ section.part2 {
 }
 section.part2 div{
     margin: 2%;
+    background-color: #FBFAF6;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 section.part3 {
     display: flex;
@@ -198,15 +253,19 @@ section.part3 form div {
     margin-top: 5%;
 }
 section.part3 form .resetear {
-    width: 150px;
+    width: 140px;
     background-color: #8A8787;
+    border-radius: 15px;
     color: #Ffffff;
     margin-right: 10%;
+    padding: 8px;
 }
 section.part3 form .enviar {
-    width: 150px;
+    width: 140px;
     background-color: #F0A83E;
+    border-radius: 15px;
     color:#ffffff;
+    padding: 8px;
 }
 section.part3 form ::placeholder {
     color:#ffffff;
@@ -247,57 +306,57 @@ section.part4 input {
    
 }
 
-section.part4 input.suscripcion {
+section.part4 button.suscripcion {
     background: #3C2313;
     border-radius: 15px;
     color: #ffffff;
     width: 70px;
     height: 40px;
-    
+    font-size: 9px;
 }
 section.part5 {
     background-color: #3C2313;
     padding: 20px;
-    position: relative;
+    display:flex;
+    justify-content: space-between;
 }
-section.part5 div {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-    padding: 15px 0;
+section.part5 div.container {
+    display:flex;
+    flex-direction: column;
 }
-section.part5 div div.option1 {
-    flex: 0 0 10%;
-    max-width: 10%;
-    margin-left: 5%;
+section.part5 div.logo {
+    display:flex;
+    align-items: center;
 }
-section.part5 div div.option2 {
-    flex: 0 0 85%;
-    max-width: 85%;
+section.part5 div.content {
+    display:flex;
+    margin: 10px;
+
+}
+section.part5 div.content div.option1 {
+    margin-right: 30px;
+}
+section.part5 div.content div.option2 {
     display: flex;
     flex-direction: column;
 }
-section.part5 div div.option2 h4{
+section.part5 div.content div.option2 h4{
     font-weight: bold;
     font-size: 20px;
     line-height: 23px;
     font-style: normal;
     color: #ffffff;
-    margin: 5px;
+    margin: 0 5px 5px;
 }
-section.part5 div div.option2 p {
+section.part5 div.content div.option2 p {
     font-style: normal;
     font-weight: bold;
     font-size: 10px;
     line-height: 12px;
     color: #8A8787;
+    margin: 0px 5px;
 }
-section.part5 img.logo2 {
-    position: absolute;
-    right: 60px;
-    bottom: 50%;
-}
+
 section.redes {
     text-align: center;
 }
