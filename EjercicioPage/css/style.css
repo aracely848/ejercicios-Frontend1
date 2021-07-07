@@ -1,3 +1,4 @@
+/*Mobile*/
 @font-face{
     src: url('../Fonts/Roboto/Roboto-Light.ttf');
     font-family: 'Roboto';
@@ -19,7 +20,7 @@ nav.nav1 {
     display: flex;
 }
 nav ul{
-    display: flex;
+    display: none;
     align-items: center;
     flex-direction: row;
     margin-right: 20px;
@@ -34,7 +35,7 @@ nav.nav1 ul.menu1{
     
 nav ul li {
     color:#ffffff;
-    font-size: 10px;
+    font-size: 0.625rem;
     z-index: 22;
     margin: 0 10px;
     padding: 0 0 10px;
@@ -43,7 +44,7 @@ nav ul li {
 }
 nav.nav1 ul li {
     color:#ffffff;
-    font-size: 10px;
+    font-size: 0.625rem;
     z-index: 22;
     margin: 0 10px;
     padding: 0 0 10px;
@@ -53,18 +54,13 @@ nav.nav1 ul li {
 nav.nav1 ul.menu1 li a{
     text-decoration: none;
     color:#ffffff;
-    font-size: 10px;
+    font-size: 0.625rem;
 }
 nav.nav1 ul.menu1 li a i{
     margin-left: 5px;
 }
 header nav.nav1{
-    background: #222222;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    height: 20px;
-    width: 100%;
-    display:flex;
-    justify-content: space-between;
+    display: none;
 }
 header nav.nav1 ul{
     display:flex;
@@ -82,53 +78,12 @@ header nav.logo img.logo1 {
 
 }
 header nav.logo ul li {
-    font-size: 13px;
-    line-height: 15px;
+    font-size: 0.813rem;
+    line-height: 0.938rem;
 }
 header nav.logo ul li img.patita {
     margin-right: 5px;
 }
-/* section.banner {
-    width: 100%;
-    background-color: rgb(250, 250, 232);
-    background-image: url('../img/foto.png');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    height: 409px;
-    position: relative;
-}
-section.banner h2 {
-    position:absolute;
-    font-size: 30px;
-    line-height: 35px;
-    background-color: #ffffff;
-    color: #3C2313;
-    right: 5%;
-    top:20%;
-    padding: 10px;
-}
-section.banner p {
-    position:absolute;
-    font-size: 16px;
-    line-height: 19px;
-    color: #3C2313;
-    right: 10%;
-    top:35%;
-    padding: 10px;
-}
-section.banner button {
-    position:absolute;
-    font-size: 16px;
-    line-height: 19px;
-    color: #ffffff;
-    background-color: #F0A83E;
-    right: 14%;
-    top:48%;
-    padding: 15px 10px;
-    border-radius: 5px;
-    text-align: center;
-} */
-
 
 section.banner {
     width: 100%;
@@ -138,31 +93,31 @@ section.banner {
     background-size: cover; 
     height: 410px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 section.banner div.text {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: end;
     justify-content: center;
 }
 section.banner div.text h2 {
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 1.875rem;
+    line-height: 2.188rem;
     background-color: #ffffff;
     color: #3C2313;
     padding: 10px;
     margin: 5px;
 }
 section.banner div.text p {
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1rem;
+    line-height: 1.188rem;
     color: #3C2313;
     margin: 5px;
 }
 section.banner div.text button {
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1rem;
+    line-height: 1.188rem;
     color: #ffffff;
     background-color: #F0A83E;
     padding: 10px;
@@ -182,14 +137,11 @@ section.part1 img {
 section.part1 h1 {
     color: #3C2313;
     font-family: 'Roboto', 'Courier New', Courier, monospace;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 47px;
-    margin: 15px 0;
-}
-section.part1 h1 {
-    color: #3C2313;
+    line-height: 2.938rem;
+    margin: 0 15px;
     text-align: center;
 }
 section.part1 ul {
@@ -197,8 +149,8 @@ section.part1 ul {
     justify-content: center;
 }
 section.part1 ul li {
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 0.938rem;
+    line-height: 1.125rem;
     padding-right: 30px;
     list-style: disc;
 }
@@ -207,8 +159,9 @@ ul li {
 }
 section.part2 {
     display: flex;
-    text-align: center;
-    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
 }
 section.part2 div{
     margin: 2%;
@@ -216,6 +169,10 @@ section.part2 div{
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+section.part2 div p {
+    color: #F0A83E;
+
 }
 section.part3 {
     display: flex;
@@ -235,15 +192,15 @@ section.part3 form {
 }
 section.part3 h2 {
     color: #3C2313;
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 1.563rem;
+    line-height: 1.875rem;
     font-weight: 700;
 }
 section.part3 input {
     background: #3C2313;
     border-radius: 15px;
     color: #ffffff;
-    width: 340px;
+    width: 191px;
     height: 40px;
     margin-bottom: 5px;
     padding-left: 15px;
@@ -273,9 +230,13 @@ section.part3 form ::placeholder {
 section.part4 {
     background-color: #F0A83E;
     color:#ffffff;
-    height: 40px;
+    height: auto;
     padding: 20px;
     margin-top: 5%;
+}
+section.part4 div {
+    min-width: 100%;
+    margin-bottom: 15px;
 }
 section.part4 img {
     margin-right: 1%;
@@ -284,24 +245,22 @@ section.part4 form {
     display: flex;
     width: 100%;
     margin: 0 auto;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 }
+
 section.part4 label{
-    font-size: 20px;
-    line-height: 23px;
-    font-weight: 700;
-    margin-right: 40%;
-    
+    font-size: 1.25rem;
+    line-height: 1.438rem;
+    font-weight: 700;    
 }
 
 section.part4 input {
     background: #ffffff;
     border-radius: 15px;
     color: #222222;
-    width: 271px;
+    width: 185px;
     height: 40px;
-    margin-right: 1%;
     padding-left: 15px;
    
 }
@@ -312,13 +271,14 @@ section.part4 button.suscripcion {
     color: #ffffff;
     width: 70px;
     height: 40px;
-    font-size: 9px;
+    font-size: 0.563rem;
 }
 section.part5 {
     background-color: #3C2313;
     padding: 20px;
     display:flex;
     justify-content: space-between;
+    flex-direction: column-reverse;
 }
 section.part5 div.container {
     display:flex;
@@ -327,6 +287,7 @@ section.part5 div.container {
 section.part5 div.logo {
     display:flex;
     align-items: center;
+    justify-content: center;
 }
 section.part5 div.content {
     display:flex;
@@ -342,8 +303,8 @@ section.part5 div.content div.option2 {
 }
 section.part5 div.content div.option2 h4{
     font-weight: bold;
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 1.25rem;
+    line-height: 1.438rem;
     font-style: normal;
     color: #ffffff;
     margin: 0 5px 5px;
@@ -351,8 +312,8 @@ section.part5 div.content div.option2 h4{
 section.part5 div.content div.option2 p {
     font-style: normal;
     font-weight: bold;
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 0.625rem;
+    line-height: 0.75rem;
     color: #8A8787;
     margin: 0px 5px;
 }
@@ -362,8 +323,8 @@ section.redes {
 }
 section.redes p{
     font-weight: bold;
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 1.25rem;
+    line-height: 1.438rem;
     font-style: normal;
     color: #3C2313;
     
@@ -376,4 +337,83 @@ footer {
 footer p {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+@media (min-width:375px) {
+    section.part4 input {
+        width: 235px;        
+    }
+    
+}
+@media (min-width:425px) {
+    section.part4 input {
+        width: 271px;        
+    }
+    section.part3 input {
+        width: 340px;
+    }
+}
+@media (min-width:768px) {
+    /*Tablet*/
+    nav ul{
+        display: flex;
+        
+    } 
+    section.part4 {
+        height: 40px;
+    }
+    section.part4 form {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    section.part4 form div {
+        display: flex;
+        min-width: 50%;
+        margin-bottom: 0;
+    }
+    section.part4 input {
+        margin-right: 1%;
+    }
+    section.part4 input {
+        width: 271px;       
+    }
+    section.part5 {
+        flex-direction: row;
+    }
+}
+
+@media (min-width:992px) {
+    /*Desktop*/
+    section.part2 {
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+    }   
+    nav ul{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-right: 20px;        
+    } 
+    header nav.nav1{
+        background: #222222;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        height: 20px;
+        width: 100%;
+        display:flex;
+        justify-content: space-between;
+    }
+    section.banner {
+       justify-content: flex-end;
+    }
+    section.banner div.text {
+       text-align: center;
+    }
+    section.part1 h1 {
+        margin: 15px 0;
+    }
+    section.part4 form div {
+        min-width: 35%;
+    }
+    
 }
