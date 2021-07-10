@@ -70,6 +70,7 @@ header nav.logo {
     background-color: #F0A83E;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 header nav.logo img.logo1 {
     padding: 20px;
@@ -81,8 +82,14 @@ header nav.logo ul li {
     font-size: 0.813rem;
     line-height: 0.938rem;
 }
-header nav.logo ul li img.patita {
+header nav.logo ul li::before{
+    content: url('../img/patas.png');
     margin-right: 5px;
+}
+.logo img.menu-mobile {
+    height: 16px;
+    width: 16px;
+    margin-right: 20px;
 }
 
 section.banner {
@@ -355,10 +362,6 @@ footer p {
 }
 @media (min-width:768px) {
     /*Tablet*/
-    nav ul{
-        display: flex;
-        
-    } 
     section.part4 {
         height: 40px;
     }
@@ -388,7 +391,8 @@ footer p {
         flex-direction: row;
         text-align: center;
         justify-content: center;
-    }   
+    }  
+     
     nav ul{
         display: flex;
         align-items: center;
@@ -402,6 +406,9 @@ footer p {
         width: 100%;
         display:flex;
         justify-content: space-between;
+    }
+    .logo img.menu-mobile {
+        display: none;
     }
     section.banner {
        justify-content: flex-end;
