@@ -150,6 +150,6 @@ nav ul li a:hover::before{
      0% {
         transform: rotate(0deg)
     } 100% {
-        transform: rotate(1turn)
+        transform: rotate(360deg)
     }
  }
